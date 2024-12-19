@@ -37,7 +37,7 @@ ENV/
 *.pth
 *.npz
 
-# 图像文件
-*.png
+# 其他图像文件
+images/temp/
 *.jpg
-*.jpeg 
+*.jpeg

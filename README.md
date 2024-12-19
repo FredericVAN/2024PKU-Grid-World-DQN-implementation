@@ -78,6 +78,54 @@ The program generates:
 3. TD error plot (td_error.png)
 4. State value error plot (state_value_error.png)
 
+### Results Visualization | 可视化结果
+
+#### 1000-step Training Results | 1000步训练结果
+
+<div align="center">
+<table>
+<tr>
+<td><img src="images/trajectory.png" alt="Trajectory Map" width="400"/></td>
+<td><img src="images/policy.png" alt="Policy Map" width="400"/></td>
+</tr>
+<tr>
+<td align="center">Trajectory Map | 轨迹图</td>
+<td align="center">Policy Map | 策略图</td>
+</tr>
+<tr>
+<td><img src="images/td_error.png" alt="TD Error" width="400"/></td>
+<td><img src="images/state_value_error.png" alt="State Value Error" width="400"/></td>
+</tr>
+<tr>
+<td align="center">TD Error | TD误差</td>
+<td align="center">State Value Error | 状态值误差</td>
+</tr>
+</table>
+</div>
+
+#### 100-step Training Results | 100步训练结果
+
+<div align="center">
+<table>
+<tr>
+<td><img src="images/trajectory_100steps.png" alt="Trajectory Map (100 steps)" width="400"/></td>
+<td><img src="images/policy_100steps.png" alt="Policy Map (100 steps)" width="400"/></td>
+</tr>
+<tr>
+<td align="center">Trajectory Map | 轨迹图</td>
+<td align="center">Policy Map | 策略图</td>
+</tr>
+<tr>
+<td><img src="images/td_error_100steps.png" alt="TD Error (100 steps)" width="400"/></td>
+<td><img src="images/state_value_error_100steps.png" alt="State Value Error (100 steps)" width="400"/></td>
+</tr>
+<tr>
+<td align="center">TD Error | TD误差</td>
+<td align="center">State Value Error | 状态值误差</td>
+</tr>
+</table>
+</div>
+
 ## License | 许可证
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
@@ -144,7 +192,7 @@ python grid_world_dql.py
 ```
 
 程序提供两种训练模式：
-1. 1000 步��练（默认模式）
+1. 1000 步训练（默认模式）
 2. 100 步训练（短训练模式）
 
 ## 输出结果
@@ -161,6 +209,54 @@ python grid_world_dql.py
 
 3. TD 误差图（td_error.png）
 4. 状态值误差图（state_value_error.png）
+
+### Results Visualization | 可视化结果
+
+#### 1000-step Training Results | 1000步训练结果
+
+<div align="center">
+<table>
+<tr>
+<td><img src="images/trajectory.png" alt="Trajectory Map" width="400"/></td>
+<td><img src="images/policy.png" alt="Policy Map" width="400"/></td>
+</tr>
+<tr>
+<td align="center">Trajectory Map | 轨迹图</td>
+<td align="center">Policy Map | 策略图</td>
+</tr>
+<tr>
+<td><img src="images/td_error.png" alt="TD Error" width="400"/></td>
+<td><img src="images/state_value_error.png" alt="State Value Error" width="400"/></td>
+</tr>
+<tr>
+<td align="center">TD Error | TD误差</td>
+<td align="center">State Value Error | 状态值误差</td>
+</tr>
+</table>
+</div>
+
+#### 100-step Training Results | 100步训练结果
+
+<div align="center">
+<table>
+<tr>
+<td><img src="images/trajectory_100steps.png" alt="Trajectory Map (100 steps)" width="400"/></td>
+<td><img src="images/policy_100steps.png" alt="Policy Map (100 steps)" width="400"/></td>
+</tr>
+<tr>
+<td align="center">Trajectory Map | 轨迹图</td>
+<td align="center">Policy Map | 策略图</td>
+</tr>
+<tr>
+<td><img src="images/td_error_100steps.png" alt="TD Error (100 steps)" width="400"/></td>
+<td><img src="images/state_value_error_100steps.png" alt="State Value Error (100 steps)" width="400"/></td>
+</tr>
+<tr>
+<td align="center">TD Error | TD误差</td>
+<td align="center">State Value Error | 状态值误差</td>
+</tr>
+</table>
+</div>
 
 ## License | 许可证
 
