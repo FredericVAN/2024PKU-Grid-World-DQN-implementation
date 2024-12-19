@@ -78,6 +78,12 @@ The program generates:
 3. TD error plot (td_error.png)
 4. State value error plot (state_value_error.png)
 
+## License | 许可证
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详细信息
+
 ---
 
 # <a name="chinese"></a>中文
@@ -138,7 +144,7 @@ python grid_world_dql.py
 ```
 
 程序提供两种训练模式：
-1. 1000 步训练（默认模式）
+1. 1000 步��练（默认模式）
 2. 100 步训练（短训练模式）
 
 ## 输出结果
@@ -155,3 +161,9 @@ python grid_world_dql.py
 
 3. TD 误差图（td_error.png）
 4. 状态值误差图（state_value_error.png）
+
+## License | 许可证
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详细信息
