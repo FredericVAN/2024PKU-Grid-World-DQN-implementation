@@ -194,11 +194,15 @@ def save_training_data(model, td_errors, state_errors, trajectories, filename_pr
     """保存模型和训练数据"""
     # 保存模型
     torch.save(model.state_dict(), f'{filename_prefix}_model.pth')
+    
+    # 将轨迹数据转换为列表形式保存
+    trajectories_list = [traj.tolist() if isinstance(traj, np.ndarray) else traj for traj in trajectories]
+    
     # 保存训练数据
     np.savez(f'{filename_prefix}_training_data.npz',
              td_errors=np.array(td_errors),
              state_errors=np.array(state_errors),
-             trajectories=[np.array(traj) for traj in trajectories])
+             trajectories=np.array(trajectories_list, dtype=object))
     print(f"模型和训练数据已保存")
 
 def load_training_data(filename_prefix='dqn'):
@@ -212,7 +216,7 @@ def load_training_data(filename_prefix='dqn'):
     data = np.load(f'{filename_prefix}_training_data.npz', allow_pickle=True)
     td_errors = data['td_errors'].tolist()
     state_errors = data['state_errors'].tolist()
-    trajectories = [traj.tolist() for traj in data['trajectories']]
+    trajectories = data['trajectories'].tolist()
     
     print(f"模型和训练数据已加载")
     return model, td_errors, state_errors, trajectories
